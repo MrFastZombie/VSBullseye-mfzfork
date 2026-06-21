@@ -1,3 +1,17 @@
+# FORK INFO
+This version is just my own fork of Bullseye for 1.22. It's likely not 100% updated as of now but is probably playable if you don't use Combat Overhaul. If you do use Combat Overhaul, I suspect that the balancing may need to be updated.
+
+Disable steel and iron spears in the settings if it is enabled.
+
+This version requires [Overhaul lib legacy compat](https://mods.vintagestory.at/overhaulliblegacycompat)
+
+This fork uses the same license as the original.
+
+### Building
+1. Make sure you have the .dll file from Overhaul Lib Legacy Compat in a folder named `dependencies` in the project root (same folder that has the csproj file).
+2. Run the command `dotnet build -c Release` and a release will be in the `Releases` folder.
+
+
 # Bullseye
 A Vintage Story mod aiming to overhaul and rebalance ranged weapons in a vanilla-friendly way.
 
