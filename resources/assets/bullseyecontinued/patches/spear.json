@@ -1,5 +1,5 @@
 ﻿[
-  {"enabled": false, "file": "game:itemtypes/tool/spear", "op": "replace", "path": "/class", "value": "Bullseye:Spear"},
+  {"enabled": false, "file": "game:itemtypes/tool/spear", "op": "replace", "path": "/classByType/*", "value": "Bullseye:Spear"},
   {
     "enabled": false,
     "file": "game:itemtypes/tool/spear",

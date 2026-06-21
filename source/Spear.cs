@@ -999,12 +999,12 @@ public class SpearClient : IClientWeaponLogic, IHasDynamicIdleAnimations, IOnGam
     protected bool CanAttackWithOtherHand(EntityPlayer player, bool mainHand = true)
     {
         ItemSlot otherHandSlot = mainHand ? player.LeftHandItemSlot : player.RightHandItemSlot;
-        return (otherHandSlot.Itemstack?.Item as IHasMeleeWeaponActions)?.CanAttack(!mainHand) ?? false;
+        return (otherHandSlot.Itemstack?.Item as IHasMeleeWeaponActions)?.CanAttack(player, !mainHand) ?? false;
     }
     protected bool CanBlockWithOtherHand(EntityPlayer player, bool mainHand = true)
     {
         ItemSlot otherHandSlot = mainHand ? player.LeftHandItemSlot : player.RightHandItemSlot;
-        return (otherHandSlot.Itemstack?.Item as IHasMeleeWeaponActions)?.CanBlock(!mainHand) ?? false;
+        return (otherHandSlot.Itemstack?.Item as IHasMeleeWeaponActions)?.CanBlock(player, !mainHand) ?? false;
     }
 
     protected static bool ActionRestricted(EntityPlayer player, bool mainHand = true)

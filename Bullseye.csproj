@@ -3,8 +3,8 @@
   <PropertyGroup>
     <ModName>Bullseye</ModName>
     <ModType>code</ModType>
-    <ModVersion>3.4.2</ModVersion>
-    <ModId>bullseyecontinued</ModId>
+    <ModVersion>3.5.0</ModVersion>
+    <ModId>bullseyecontinuedcontinued</ModId>
     <Description></Description>
     <Side>Universal</Side>
     <RequiredOnClient>true</RequiredOnClient>
@@ -15,6 +15,7 @@
   <ItemGroup>
     <ModInfoAuthors Include="Maltiez" />
     <ModInfoAuthors Include="TeacupAngel" />
+    <ModInfoAuthors Include="MrFastZombie (1.22 fork)" />
   </ItemGroup>
 
   <!-- Translators -->
@@ -34,7 +35,7 @@
 
   <!-- Project settings -->
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -64,7 +65,7 @@
   </PropertyGroup>
 
   <!-- Formatting JSON files -->
-  <PropertyGroup>
+  <!--<PropertyGroup>
     <Scripts>$(ProjectDir)\scripts</Scripts>
     <Formatter>$(Scripts)\formatter.py</Formatter>
   </PropertyGroup>
@@ -76,13 +77,13 @@
     <AssetsToFormat Include="$(AssetsDir)\$(ModId)\entities" />
     <AssetsToFormat Include="$(AssetsDir)\$(ModId)\config\animations" />
     <AssetsToFormat Include="$(AssetsDir)\game\itemtypes" />
-  </ItemGroup>
+  </ItemGroup>-->
 
   <!-- References to libraries that are being used in project -->
   <ItemGroup>
     <PackageReference Include="VSImGui" Version="0.0.6" />
     <Reference Include="$(GameDirectory)/**/*.dll" Private="false" />
-    <Reference Include="$(ProjectDir)/../Overhaullib/bin/Release/Mods/overhaullib/Overhaullib.dll" Private="false" />
+    <Reference Include="$(ProjectDir)/dependencies/OverhaullibLegacyCompat.dll" Private="false" />
   </ItemGroup>
 
   <!-- Forces rebuild -->
@@ -119,9 +120,9 @@
   </Target>
 
   <!-- Formats asssets files -->
-  <Target Name="Format" AfterTargets="ModInfo" BeforeTargets="CopyFilesToOutput">
+  <!--<Target Name="Format" AfterTargets="ModInfo" BeforeTargets="CopyFilesToOutput">
     <Exec Command="python $(Formatter) -a -d %(AssetsToFormat.Identity)" />
-  </Target>
+  </Target>-->
 
   <!-- Copies modicon, assets folder and native libraries if they exist into output directory -->
   <Target Name="CopyFilesToOutput" AfterTargets="Format" BeforeTargets="BeforeBuild">
