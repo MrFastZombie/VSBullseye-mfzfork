@@ -3,6 +3,8 @@ This version is just my own fork of Bullseye for 1.22. It's likely not 100% upda
 
 Disable steel and iron spears in the settings if it is enabled.
 
+This fork will not be updated for 1.23 unless the original is not updated.
+
 This version requires [Overhaul lib legacy compat](https://mods.vintagestory.at/overhaulliblegacycompat)
 
 This fork uses the same license as the original.
