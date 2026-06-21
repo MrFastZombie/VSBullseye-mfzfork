@@ -28,8 +28,8 @@
 
   <!-- Dependencies -->
   <ItemGroup>
-    <Dependencies Include="overhaullib">
-      <Version>1.7.1</Version>
+    <Dependencies Include="overhaulliblegacycompat">
+      <Version>1.1.44</Version>
     </Dependencies>
   </ItemGroup>
 
