@@ -1,5 +1,7 @@
 # FORK INFO
-This version is just my own fork of Bullseye for 1.22. It's likely not 100% updated as of now but is probably playable if you don't use Combat Overhaul. If you do use Combat Overhaul, I suspect that the balancing may need to be updated.
+This version is just my own fork of Bullseye for 1.22. It's likely not 100% updated as of now but is probably playable.
+
+If you are working on your own fork please don't take this one as a reason to stop. I just want to keep using the mod. I'd really prefer if someone who is more committed to it than me would do a proper fork! Also, feel free to use this fork for reference.
 
 Disable steel and iron spears in the settings if it is enabled.
 
